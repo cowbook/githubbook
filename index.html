@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHubBook - GitHub热点追踪 · AI趋势洞察</title>
+  <meta name="description" content="每日追踪GitHub最热门开源项目，AI领域前沿资讯，让你第一时间掌握技术热点趋势。">
+  <meta name="keywords" content="GitHub,开源,AI,人工智能,热点,趋势,编程,技术">
+  <meta property="og:title" content="GitHubBook - GitHub热点追踪">
+  <meta property="og:description" content="每日追踪GitHub最热门开源项目，AI领域前沿资讯">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 滚动新闻条 -->
+<div class="ticker-bar">
+  <div class="ticker-inner" id="tickerInner">
+    <span class="ticker-item">🔥 ruvnet/ruflo <span class="up">+2,598⭐</span></span>
+    <span class="ticker-item">📈 TauricResearch/TradingAgents <span class="up">+2,182⭐</span></span>
+    <span class="ticker-item">🦀 Hmbown/DeepSeek-TUI <span class="up">+1,274⭐</span></span>
+    <span class="ticker-item">🤖 msitarzewski/agency-agents <span class="up">+1,189⭐</span></span>
+    <span class="ticker-item">🕵️ soxoj/maigret <span class="up">+1,119⭐</span></span>
+    <span class="ticker-item">⚡ czlonkowski/n8n-mcp <span class="up">+496⭐</span></span>
+    <span class="ticker-item">🔧 1jehuang/jcode <span class="up">+548⭐</span></span>
+    <span class="ticker-item">💹 virattt/dexter <span class="up">+409⭐</span></span>
+    <span class="ticker-item">🌐 browserbase/skills <span class="up">+320⭐</span></span>
+    <span class="ticker-item">📄 docusealco/docuseal <span class="up">+535⭐</span></span>
+    <!-- 重复一遍保证无缝 -->
+    <span class="ticker-item">🔥 ruvnet/ruflo <span class="up">+2,598⭐</span></span>
+    <span class="ticker-item">📈 TauricResearch/TradingAgents <span class="up">+2,182⭐</span></span>
+    <span class="ticker-item">🦀 Hmbown/DeepSeek-TUI <span class="up">+1,274⭐</span></span>
+    <span class="ticker-item">🤖 msitarzewski/agency-agents <span class="up">+1,189⭐</span></span>
+    <span class="ticker-item">🕵️ soxoj/maigret <span class="up">+1,119⭐</span></span>
+    <span class="ticker-item">⚡ czlonkowski/n8n-mcp <span class="up">+496⭐</span></span>
+    <span class="ticker-item">🔧 1jehuang/jcode <span class="up">+548⭐</span></span>
+    <span class="ticker-item">💹 virattt/dexter <span class="up">+409⭐</span></span>
+    <span class="ticker-item">🌐 browserbase/skills <span class="up">+320⭐</span></span>
+    <span class="ticker-item">📄 docusealco/docuseal <span class="up">+535⭐</span></span>
+  </div>
+</div>
+
+<!-- 导航栏 -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">GitHub<span>Book</span></span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">🏠 首页</a>
+      <a href="trending.html" class="nav-link">🔥 GitHub热点 <span class="nav-badge">HOT</span></a>
+      <a href="ai-academy.html" class="nav-link">🤖 AI学堂</a>
+      <a href="weekly.html" class="nav-link">📰 周报</a>
+      <a href="tools.html" class="nav-link">🛠️ 工具箱</a>
+    </nav>
+    <div class="header-cta">
+      <a href="https://github.com/cowbook/githubbook" target="_blank" class="btn-github">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        Star on GitHub
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero 区域 -->
+<section class="hero">
+  <div class="hero-badge">📡 每日实时更新 · 数据来源 GitHub Trending</div>
+  <h1>追踪 GitHub 最热项目<br>洞察 AI 技术前沿</h1>
+  <p>每天追踪 GitHub 全球热门开源项目，汇聚 AI、编程、工具类最新趋势，让你永远比别人快一步。</p>
+  <div class="hero-btns">
+    <a href="trending.html" class="btn-primary">🔥 查看今日热榜</a>
+    <a href="ai-academy.html" class="btn-secondary">🤖 探索 AI 学堂</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num" data-count="10">0</span>
+      <span class="stat-label">今日热榜项目</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-count="9738">0</span>
+      <span class="stat-label">今日新增 Stars</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-count="7">0</span>
+      <span class="stat-label">AI 相关项目</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-count="5">0</span>
+      <span class="stat-label">编程语言</span>
+    </div>
+  </div>
+</section>
+
+<!-- 主内容 -->
+<div class="main-content">
+  <main class="content-area">
+
+    <!-- 今日热榜 Top 5 -->
+    <div class="section-header">
+      <h2 class="section-title"><span class="section-icon">🔥</span>今日 GitHub 热榜 Top 5</h2>
+      <a href="trending.html" class="section-link">查看完整榜单 →</a>
+    </div>
+
+    <div class="trend-list">
+
+      <div class="trend-card fade-in">
+        <div class="card-header">
+          <a href="https://github.com/ruvnet/ruflo" target="_blank" class="card-title">
+            🌊 ruvnet / ruflo
+          </a>
+          <span class="card-rank top3">#1 今日</span>
+        </div>
+        <p class="card-desc">领先的 Claude Agent 编排平台，支持多智能体群、自主工作流、RAG集成及 Claude Code/Codex 集成。AI Agent 领域的扛把子，TypeScript 打造。</p>
+        <div class="card-meta">
+          <span class="meta-tag"><span class="lang-dot" data-lang="TypeScript"></span> TypeScript</span>
+          <span class="meta-tag">⭐ 41,540</span>
+          <span class="stars-today">↑ +2,598 今日</span>
+        </div>
+      </div>
+
+      <div class="trend-card fade-in">
+        <div class="card-header">
+          <a href="https://github.com/TauricResearch/TradingAgents" target="_blank" class="card-title">
+            📈 TauricResearch / TradingAgents
+          </a>
+          <span class="card-rank top3">#2 今日</span>
+        </div>
+        <p class="card-desc">多智能体 LLM 金融交易框架，让 AI 自主分析市场、制定策略并执行交易。量化交易 + AI Agent 的完美结合。</p>
+        <div class="card-meta">
+          <span class="meta-tag"><span class="lang-dot" data-lang="Python"></span> Python</span>
+          <span class="meta-tag">⭐ 67,626</span>
+          <span class="stars-today">↑ +2,182 今日</span>
+        </div>
+      </div>
+
+      <div class="trend-card fade-in">
+        <div class="card-header">
+          <a href="https://github.com/Hmbown/DeepSeek-TUI" target="_blank" class="card-title">
+            🦀 Hmbown / DeepSeek-TUI
+          </a>
+          <span class="card-rank top3">#3 今日</span>
+        </div>
+        <p class="card-desc">在终端中运行的 DeepSeek 模型编码 Agent，极简主义程序员的最爱。Rust 编写，性能出色。</p>
+        <div class="card-meta">
+          <span class="meta-tag"><span class="lang-dot" data-lang="Rust"></span> Rust</span>
+          <span class="meta-tag">⭐ 4,092</span>
+          <span class="stars-today">↑ +1,274 今日</span>
+        </div>
+      </div>
+
+      <div class="trend-card fade-in">
+        <div class="card-header">
+          <a href="https://github.com/msitarzewski/agency-agents" target="_blank" class="card-title">
+            🤖 msitarzewski / agency-agents
+          </a>
+          <span class="card-rank">#4 今日</span>
+        </div>
+        <p class="card-desc">完整 AI 代理集合，涵盖前端、社区运营、创意注入等多种专业角色。累计 Stars 全榜最高，足见社区热情。</p>
+        <div class="card-meta">
+          <span class="meta-tag"><span class="lang-dot" data-lang="Shell"></span> Shell</span>
+          <span class="meta-tag">⭐ 92,724</span>
+          <span class="stars-today">↑ +1,189 今日</span>
+        </div>
+      </div>
+
+      <div class="trend-card fade-in">
+        <div class="card-header">
+          <a href="https://github.com/soxoj/maigret" target="_blank" class="card-title">
+            🕵️ soxoj / maigret
+          </a>
+          <span class="card-rank">#5 今日</span>
+        </div>
+        <p class="card-desc">通过用户名从 3000+ 网站收集人物档案信息，OSINT 利器，安全研究者和记者的必备工具。</p>
+        <div class="card-meta">
+          <span class="meta-tag"><span class="lang-dot" data-lang="Python"></span> Python</span>
+          <span class="meta-tag">⭐ 24,900</span>
+          <span class="stars-today">↑ +1,119 今日</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 推荐文章 -->
+    <div class="section-header">
+      <h2 class="section-title"><span class="section-icon">📖</span>推荐阅读</h2>
+      <a href="trending.html" class="section-link">更多文章 →</a>
+    </div>
+
+    <div class="post-grid">
+      <a href="posts/2026-05-05-github-trending.html" class="post-card">
+        <div class="post-card-img">🔥</div>
+        <div class="post-card-body">
+          <span class="post-tag tag-hot">今日热榜</span>
+          <h3>2026.05.05 GitHub热点：AI Agent 完全霸榜，7个项目直指智能体革命</h3>
+          <div class="post-card-meta">📅 2026-05-05 · ⏱ 5分钟阅读</div>
+        </div>
+      </a>
+
+      <a href="ai-academy.html" class="post-card">
+        <div class="post-card-img">🤖</div>
+        <div class="post-card-body">
+          <span class="post-tag tag-ai">AI学堂</span>
+          <h3>AI 学堂即将开放 — 从 Prompt 到 Agent，系统学习 AI 开发</h3>
+          <div class="post-card-meta">📅 即将上线 · 敬请期待</div>
+        </div>
+      </a>
+
+      <a href="weekly.html" class="post-card">
+        <div class="post-card-img">📰</div>
+        <div class="post-card-body">
+          <span class="post-tag tag-weekly">周报</span>
+          <h3>本周 GitHub 开源热点周报 — AI Agent、金融量化双线爆发</h3>
+          <div class="post-card-meta">📅 2026-05-05 · ⏱ 8分钟阅读</div>
+        </div>
+      </a>
+
+      <a href="tools.html" class="post-card">
+        <div class="post-card-img">🛠️</div>
+        <div class="post-card-body">
+          <span class="post-tag tag-dev">工具箱</span>
+          <h3>2026年开发者必备工具清单 — 从编辑器到 AI Copilot</h3>
+          <div class="post-card-meta">📅 2026-05-01 · ⏱ 6分钟阅读</div>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- 侧边栏 -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h3>📊 今日热门语言</h3>
+      <div class="lang-list">
+        <div class="lang-item">
+          <span class="lang-name">TypeScript</span>
+          <div class="lang-bar-wrap">
+            <div class="lang-bar" style="width:30%;background:#3178c6;"></div>
+          </div>
+          <span class="lang-pct">30%</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">Python</span>
+          <div class="lang-bar-wrap">
+            <div class="lang-bar" style="width:20%;background:#3572A5;"></div>
+          </div>
+          <span class="lang-pct">20%</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">Rust</span>
+          <div class="lang-bar-wrap">
+            <div class="lang-bar" style="width:20%;background:#dea584;"></div>
+          </div>
+          <span class="lang-pct">20%</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">Shell</span>
+          <div class="lang-bar-wrap">
+            <div class="lang-bar" style="width:10%;background:#89e051;"></div>
+          </div>
+          <span class="lang-pct">10%</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">Ruby</span>
+          <div class="lang-bar-wrap">
+            <div class="lang-bar" style="width:10%;background:#701516;"></div>
+          </div>
+          <span class="lang-pct">10%</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">JavaScript</span>
+          <div class="lang-bar-wrap">
+            <div class="lang-bar" style="width:10%;background:#f1e05a;"></div>
+          </div>
+          <span class="lang-pct">10%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>🏷️ 热门标签</h3>
+      <div class="tag-cloud">
+        <a href="#" class="tag-item">#AI-Agent</a>
+        <a href="#" class="tag-item">#LLM</a>
+        <a href="#" class="tag-item">#Rust</a>
+        <a href="#" class="tag-item">#量化交易</a>
+        <a href="#" class="tag-item">#TypeScript</a>
+        <a href="#" class="tag-item">#MCP</a>
+        <a href="#" class="tag-item">#开源</a>
+        <a href="#" class="tag-item">#DeepSeek</a>
+        <a href="#" class="tag-item">#Claude</a>
+        <a href="#" class="tag-item">#n8n</a>
+        <a href="#" class="tag-item">#OSINT</a>
+        <a href="#" class="tag-item">#Python</a>
+      </div>
+    </div>
+
+    <div class="sidebar-card subscribe-card">
+      <h3>📧 订阅热点推送</h3>
+      <p>每日一封邮件，汇总今日 GitHub 最热项目，不错过任何技术趋势。</p>
+      <form class="subscribe-form" onsubmit="return false;">
+        <input type="email" class="subscribe-input" placeholder="你的邮箱地址">
+        <button class="subscribe-btn">订阅</button>
+      </form>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📅 最新更新</h3>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;gap:10px;align-items:flex-start;">
+          <span style="color:var(--accent-orange);font-size:1rem;flex-shrink:0;">🔥</span>
+          <div>
+            <a href="posts/2026-05-05-github-trending.html" style="color:var(--text-primary);text-decoration:none;font-size:0.85rem;font-weight:600;">AI Agent 霸榜今日热点</a>
+            <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">2026-05-05</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:flex-start;">
+          <span style="color:var(--accent-purple);font-size:1rem;flex-shrink:0;">🤖</span>
+          <div>
+            <a href="ai-academy.html" style="color:var(--text-primary);text-decoration:none;font-size:0.85rem;font-weight:600;">AI学堂 — 敬请期待</a>
+            <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">即将上线</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:flex-start;">
+          <span style="color:var(--accent-blue);font-size:1rem;flex-shrink:0;">🚀</span>
+          <div>
+            <a href="index.html" style="color:var(--text-primary);text-decoration:none;font-size:0.85rem;font-weight:600;">GitHubBook 正式上线</a>
+            <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">2026-05-05</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">📚</div>
+          <span class="logo-text">GitHub<span>Book</span></span>
+        </a>
+        <p>每日追踪 GitHub 全球热门开源项目，深度解读 AI 技术前沿。以流量为王，以内容为本。</p>
+      </div>
+      <div class="footer-col">
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="trending.html">GitHub热点</a></li>
+          <li><a href="ai-academy.html">AI学堂</a></li>
+          <li><a href="weekly.html">周报</a></li>
+          <li><a href="tools.html">工具箱</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>内容</h4>
+        <ul>
+          <li><a href="posts/2026-05-05-github-trending.html">今日热榜</a></li>
+          <li><a href="weekly.html">本周周报</a></li>
+          <li><a href="tools.html">开发者工具</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="https://github.com/cowbook/githubbook" target="_blank">开源代码</a></li>
+          <li><a href="https://github.com/cowbook" target="_blank">作者主页</a></li>
+          <li><a href="https://github.com/trending" target="_blank">GitHub Trending</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GitHubBook · 数据来源 <a href="https://github.com/trending" target="_blank" style="color:var(--accent-blue);">GitHub Trending</a> · 每日自动更新</span>
+      <div class="footer-links">
+        <a href="https://github.com/cowbook/githubbook" target="_blank">GitHub</a>
+        <a href="#">RSS</a>
+        <a href="#">隐私政策</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" title="回到顶部">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
